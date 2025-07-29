@@ -55,6 +55,7 @@ origins = [
     "http://localhost:3000",  # Permitir peticiones desde tu frontend de React
     "http://localhost",
     "http://localhost:8000", # Para probar la API directamente
+    "https://emanueltula89.github.io", # Permitir peticiones desde GitHub Pages
 ]
 
 app.add_middleware(
