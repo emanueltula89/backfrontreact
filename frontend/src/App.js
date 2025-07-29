@@ -26,7 +26,7 @@ function App() {
   // Función para cargar los datos de la API
   const fetchEntries = async () => {
     try {
-      const response = await fetch('http://localhost:8000/entries');
+      const response = await fetch('https://backfrontreact.onrender.com/entries');
       if (!response.ok) {
         throw new Error(`Error HTTP: ${response.status}`);
       }
