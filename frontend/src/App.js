@@ -52,7 +52,7 @@ function App() {
     e.preventDefault();
     setResponseMessage('Enviando...');
 
-    const API_URL = 'http://localhost:8000/submit'; 
+    const API_URL = 'https://backfrontreact.onrender.com/submit'; 
 
     try {
       const response = await fetch(API_URL, {
