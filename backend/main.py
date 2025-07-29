@@ -14,14 +14,24 @@ SCOPE = [
     'https://www.googleapis.com/auth/drive'
 ]
 
-# Ruta al archivo de credenciales dentro del contenedor
-CREDENTIALS_FILE_PATH = "/app/google_credentials.json"
+# Carga las credenciales desde las variables de entorno
+creds_info = {
+    "type": os.environ.get("type"),
+    "project_id": os.environ.get("project_id"),
+    "private_key_id": os.environ.get("private_key_id"),
+    "private_key": os.environ.get("private_key").replace("\\n", "\n"), # Reemplazar \n por 
 
-# Carga las credenciales desde el archivo JSON
-if not os.path.exists(CREDENTIALS_FILE_PATH):
-    raise FileNotFoundError(f"El archivo de credenciales no se encontró en: {CREDENTIALS_FILE_PATH}")
+    "client_email": os.environ.get("client_email"),
+    "client_id": os.environ.get("client_id"),
+    "auth_uri": os.environ.get("auth_uri"),
+    "token_uri": os.environ.get("token_uri"),
+    "auth_provider_x509_cert_url": os.environ.get("auth_provider_x509_cert_url"),
+    "client_x509_cert_url": os.environ.get("client_x509_cert_url"),
+    "universe_domain": os.environ.get("universe_domain"),
+}
 
-creds = service_account.Credentials.from_service_account_file(CREDENTIALS_FILE_PATH, scopes=SCOPE)
+creds = service_account.Credentials.from_service_account_info(creds_info, scopes=SCOPE)
+
 
 # Autoriza al cliente de gspread
 client = gspread.authorize(creds)
