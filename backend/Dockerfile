@@ -11,7 +11,7 @@ COPY requirements.txt requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 # 5. Copiar el archivo de credenciales JSON al contenedor
-COPY google_credentials.json google_credentials.json
+
 
 # 6. Copiar el resto del código de la aplicación
 COPY . .
