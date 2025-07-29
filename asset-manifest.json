@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "https://emanueltula89.github.io/backfrontreact/static/css/main.57a95daf.css",
-    "main.js": "https://emanueltula89.github.io/backfrontreact/static/js/main.5d543457.js",
+    "main.js": "https://emanueltula89.github.io/backfrontreact/static/js/main.d36aecd4.js",
     "static/js/453.670e15c7.chunk.js": "https://emanueltula89.github.io/backfrontreact/static/js/453.670e15c7.chunk.js",
     "index.html": "https://emanueltula89.github.io/backfrontreact/index.html",
     "main.57a95daf.css.map": "https://emanueltula89.github.io/backfrontreact/static/css/main.57a95daf.css.map",
-    "main.5d543457.js.map": "https://emanueltula89.github.io/backfrontreact/static/js/main.5d543457.js.map",
+    "main.d36aecd4.js.map": "https://emanueltula89.github.io/backfrontreact/static/js/main.d36aecd4.js.map",
     "453.670e15c7.chunk.js.map": "https://emanueltula89.github.io/backfrontreact/static/js/453.670e15c7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.57a95daf.css",
-    "static/js/main.5d543457.js"
+    "static/js/main.d36aecd4.js"
   ]
 }
